@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "atk-training-avnish-wf-basic"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "atk_training_avnish_wf_basic"}]
+
+[tool.poetry.scripts]
+basic = "atk_training_avnish_wf_basic.commands:app"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

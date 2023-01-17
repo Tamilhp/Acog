@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operation Console</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <style>
+        table,
+        th,
+        td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    
+        .large_font {
+          font-size: 24px;
+        }
+    
+        .small_font {
+          font-size: 16px;
+        }
+      </style>
+      <script>
+        function refresh() {
+          window.location.href =  "http://0.0.0.0:8000" + "/display_data/data"
+        }
+      </script>
+</head>
+<body>
+    <h1>Q_data</h1>
+    <table>
+        <thead>
+          <tr>
+          <tr valign="top">
+            <th>Id</th>
+            <th>q_data</th>
+            <th>status</th>
+            <th>arrived_time</th>
+            <th>process_start_time</th>
+            <th>process_end_time</th>
+            <th>crash_counts</th>
+          </tr>
+        </thead>
+    
+        </tr>
+        {% for row in data %}
+        <tr valign="top" class="Failure">
+          <td>{{row[0]}}</td>
+          <td>{{row[1]}}</td>
+          <td>{{row[2]}}</td>
+          <td>{{row[3]}}</td>
+          <td>{{row[4]}}</td>
+          <td>{{row[5]}}</td>
+          <td>{{row[6]}}</td>
+        </tr>
+        {% endfor %}
+        <br>
+      </table>
+      <div class="center">
+        <button class="button" onClick="refresh()">
+          Refresh
+        </button>
+      </div>
+</body>
+</html>

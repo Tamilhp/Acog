@@ -1,0 +1,18 @@
+Hey dude
+
+Hey there! How can I help you?
+
+Hey is there any specific end character in a file in python?
+
+Yes, in Python, every file will end with a special character called the End-Of-File (EOF) character. It is represented by a single character, usually the ASCII character '\0' (null character). When the EOF character is encountered, the Python interpreter knows that it has reached the end of the file.
+
+Ok. How can I use this EOF character in a terminate condition?
+
+You can use the EOF character as part of a termination condition when looping through a file. You would do this by checking to see if the character read is the EOF character. If it is, you can exit the loop. For example: 
+
+while True:
+    char = file.read(1)
+    if char == '\0':
+        break  # Exit the loop
+
+

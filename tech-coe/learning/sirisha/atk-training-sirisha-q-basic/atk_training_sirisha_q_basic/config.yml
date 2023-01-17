@@ -1,0 +1,9 @@
+version: 1.0
+
+config:
+    checking_interval: 10
+    max_crashes: 3
+    min_processing_time: 300
+user:
+    producer_delay: 10
+    consumer_delay: 10

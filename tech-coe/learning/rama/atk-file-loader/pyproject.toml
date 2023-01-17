@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "atk-file-loader"
+version = "0.1.0"
+description = ""
+authors = ["Ramarao Kanneganti <rama@agnitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_file_loader"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+
+[tool.poetry.scripts]
+atk_rama_exec_function = "atk_file_loader.main:app"
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

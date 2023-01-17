@@ -1,0 +1,3 @@
+https://www.geeksforgeeks.org/how-to-open-a-file-using-the-with-statement/
+https://stackoverflow.com/questions/2967194/open-in-python-does-not-create-a-file-if-it-doesnt-exist
+https://www.studytonight.com/python-howtos/how-to-get-the-home-directory-in-python

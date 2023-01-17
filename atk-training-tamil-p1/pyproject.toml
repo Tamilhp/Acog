@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "atk-training-tamil-p1"
+version = "0.1.0"
+description = ""
+authors = ["Tamil Selvan <tamil@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_tamil_p1"}]
+
+[tool.poetry.scripts]
+atk-training-tamil-py1-extended1 = "atk_training_tamil_p1.commands:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+pyyaml = "^6.0"
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

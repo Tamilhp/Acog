@@ -1,0 +1,7 @@
+function_path: /home/acog/tech-coe/learning/suganya/atk-streaming-iterator-example/tests/
+pipeline:
+  - TransformToUpper
+  - TransformToLower
+  - TransformToCapitalize
+  - TransformMultiplelinesToSingle
+  - TransformToLessCharacters

@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "atk-training-pq"
+version = "0.1.1"
+description = ""
+authors = ["amani-acog <amani@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_pq"}, {include = "atk_training_pq/template.html"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+pyyaml = "^6.0"
+singleton-decorator = "^1.0.0"
+fastapi = "^0.88.0"
+jinja2 = "^3.1.2"
+uvicorn = "^0.20.0"
+
+[tool.poetry.scripts]
+atk-amani-producer = "atk_training_pq.producer:app"
+atk-amani-consumer = "atk_training_pq.consumer:app"
+atk-amani-manager = "atk_training_pq.manager:app"
+atk-amani-opsconsole = "atk_training_pq.ops_console2:main"
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

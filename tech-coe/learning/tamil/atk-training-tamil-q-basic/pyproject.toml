@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "atk-training-tamil-q-basic"
+version = "0.1.0"
+description = ""
+authors = ["Tamil Selvan <tamil@aganitha.ai>"]
+readme = "README.md"
+packages = [
+    {include = "atk_training_tamil_q_basic"},
+    {include = "atk_training_tamil_q_basic/static/*"},
+    {include = "atk_training_tamil_q_basic/templates/*"}
+]
+
+
+[tool.poetry.scripts]
+atk-training-tamil-q-basic-producer = "atk_training_tamil_q_basic.producer:main"
+atk-training-tamil-q-basic-consumer = "atk_training_tamil_q_basic.consumer:main"
+atk-training-tamil-q-basic-manager = "atk_training_tamil_q_basic.manager:main"
+atk-training-tamil-q-basic-ops = "atk_training_tamil_q_basic.ops:main"
+atk-training-tamil-q-basic-web-console = "atk_training_tamil_q_basic.web_page:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0"
+typer = "^0.7.0"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+jinja2 = "^3.1.2"
+importlib-resources = "^5.10.2"
+
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

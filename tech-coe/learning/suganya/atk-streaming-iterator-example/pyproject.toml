@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "atk-training-suganya-streaming-iterator"
+version = "0.1.0"
+description = ""
+authors = ["suganya-acog <suganya@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_suganya_streaming_iterator"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.7.0"
+pyyaml = "^6.0"
+
+[tool.poetry.scripts]
+atk-training-dynamic-loading = "atk_training_suganya_streaming_iterator.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

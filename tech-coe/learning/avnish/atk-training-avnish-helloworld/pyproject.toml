@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "atk-training-avnish-helloworld"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "atk_training_avnish_helloworld"}]
+
+
+[tool.poetry.scripts]
+atk-avnish-hello="atk_training_avnish_helloworld.main:app"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

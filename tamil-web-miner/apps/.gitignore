@@ -1,0 +1,14 @@
+../../.gitignore
+        ../../.netrc
+        ../../.pypirc
+        ../../Makefile
+        ../../README.md
+        ../../apps/
+        ../../dockerbuild/
+        ../../docs/
+        ../../models/
+        ../Makefile
+        ../__init__.py
+        .gitignore
+        .vscode/
+        ../../ref_docs/

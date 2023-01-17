@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "atk-training-tamil-pythonsql"
+version = "0.1.0"
+description = ""
+authors = ["Tamil Selvan <tamil@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_tamil_pythonsql"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^1.5.2"
+typer = "^0.7.0"
+
+[tool.poetry.scripts]
+atk-training-tamil-bulkload = "atk_training_tamil_pythonsql.bulk_load_decorator:main"
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

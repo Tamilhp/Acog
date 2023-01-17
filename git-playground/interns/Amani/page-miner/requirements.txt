@@ -1,0 +1,6 @@
+logging
+aganitha_base_utils
+requests
+urllib
+typer
+bs4

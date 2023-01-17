@@ -1,0 +1,5 @@
+just for testing
+this is python exercise to transform lines into uppercase
+this is to check whether stopword is being removed in file lines
+python module is being loaded checking whether stopword is working not
+perfect example for stop words

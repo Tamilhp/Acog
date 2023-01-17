@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "atk-training-sirisha-q-basic"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "atk_training_sirisha_q_basic"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.scripts]
+atk-sirisha-producer = "atk_training_sirisha_q_basic.producer.app"
+atk-sirisha-consumer = "atk_training_sirisha_q_basic.consumer.app"
+atk-sirisha-manager = "atk_training_sirisha_q_basic.manager.app"
+atk-sirisha-opsconsole = "atk_training_sirisha_q_basic.operations.app"
+
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

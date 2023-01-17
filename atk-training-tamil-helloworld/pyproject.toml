@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "atk-training-tamil-helloworld"
+version = "0.1.0"
+description = ""
+authors = ["Tamil Selvan <tamil@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_tamil_helloworld"}]
+
+[tool.poetry.scripts]
+tamil_ex1_cli = "atk_training_tamil_helloworld.ex1:main"
+tamil_ex2_cli = "atk_training_tamil_helloworld.ex2:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.7.0"
+
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

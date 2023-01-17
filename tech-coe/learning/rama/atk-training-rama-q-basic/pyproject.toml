@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "atk-training-rama-q-basic"
+version = "0.1.0"
+description = ""
+authors = ["Ramarao Kanneganti <rama@agnitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_rama_q_basic"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

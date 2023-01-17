@@ -1,0 +1,4 @@
+pipeline:
+  - upper_case
+  - stop_words
+  - lower_case

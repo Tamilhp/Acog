@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://classless.de/classless.css">
+  <script>
+    function myFunction() {
+
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Menu ▾</a>
+        <ul>
+          <li><a href="/">All Items</a></li>
+          <li><a href="/unprocessed">Unprocessed Items</a></li>
+          <li><a href="/under-process">Under Process Items</a></li>
+          <li><a href="/processed">Processed Items</a></li>
+          <li><a href="/manual-check">Manual Check Items</a></li>
+          <li><a href="/unprocessed">Update Status</a></li>
+          <li><a href="/delete-records">Delete Items</a></li>
+        </ul>
+      </li>
+      <li class="float-right">Collapse</li>
+    </ul>
+  </nav>
+
+  <h1>Persistent_queue Table</h1>
+  <table class="table">
+    <tr class="table_header">
+      <th class="table_cell">item_id</th>
+      <th class="table_cell">item</th>
+      <th class="table_cell">timestamp</th>
+      <th class="table_cell">status</th>
+      <th class="table_cell">submission_count</th>
+    </tr>
+    {% for row in records %}
+      <tr class="table_row">
+        {% for cell in row %}
+          <td class="table_cell">{{ cell }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

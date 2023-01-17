@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapi-with-static"
+version = "0.1.0"
+description = ""
+authors = ["Ramarao Kanneganti <rama@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.70.1"
+uvicorn = "^0.16.0"
+typer = "^0.4.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+fastapiserver = "fastapi_with_static.server:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "atk-training-suganya-python-exercises"
+version = "0.1.0"
+description = ""
+authors = ["suganya-acog <suganya@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_suganya_python_exercises"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+#[tool.poetry.scripts]
+#atktraining-sugan-py1-basic ="atk_training_suganya_python_exercises.atktraining_sugan_py1:main"
+nltk = "^3.7"
+
+#[tool.poetry.scripts]
+#atktraining-sugan-py1-extended1 ="atk_training_suganya_python_exercises.atktraining_sugan_py1:main"
+typer = "^0.7.0"
+pyyaml = "^6.0"
+
+#[tool.poetry.scripts]
+#atktraining-sugan-py1-extended2 ="atk_training_suganya_python_exercises.commands:main"
+
+[tool.poetry.scripts]
+atktraining-sugan-py1-extended3 ="atk_training_suganya_python_exercises.get_yaml_input:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

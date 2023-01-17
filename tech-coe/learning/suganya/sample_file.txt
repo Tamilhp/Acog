@@ -1,0 +1,23 @@
+Just for testing
+
+
+
+
+
+Should be an even simpler solution. We really just want to a catch any possible space (which includes intermediate newlines) between our two anchor newlines that will make the single blank line and collapse it down to just the two newlines.
+This is a python exercise to transform the lines into uppercase
+The only expectation from recipients was an annual three-page letter to the donor for the three years following the receipt of funds. Since then MacKenzie has followed the same approach to donate approximately USD 13 billion as of spring 2022. As a frame of reference, the Bill & Melinda Gates Foundation granted USD 6.7 billion in 2021.
+
+The Center for Effective Philanthropy (CEP) recently undertook a research study to examine the impact of the unrestricted funds granted by MacKenzie. They sought to survey all nonprofits that received a gift from her in the first round of giving in summer 2020 through to the third round in summer 2021. CEP itself has received funding from MacKenzie, but this research was conducted independent of her grant, that is, through support from other donors.
+This is to check whether the stopword is being removed in the file lines. 
+
+A python module is being loaded and checking whether stopword is working or not,A python module is being loaded and checking whether stopword is working or not
+repeated,A python module is being loaded and checking whether stopword is working or not repeated twice, A python module is being loaded and checking whether stopword is working or not
+repeated thrice
+
+
+
+
+
+
+The perfect example for stop words

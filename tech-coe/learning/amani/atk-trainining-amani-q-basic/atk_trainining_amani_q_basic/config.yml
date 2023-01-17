@@ -1,0 +1,11 @@
+version: 1.0
+
+config:
+    dbname: sample1.db
+    manager_delay: 300
+    max_crashes: 4
+    processing_time: -1 hour
+    producer_delay: 5
+    consumer_delay: 10
+    ops_console_delay: 21600
+    retry_time: 180

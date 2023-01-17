@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "atk-helloworld-caller"
+version = "0.1.0"
+description = ""
+authors = ["Suganya <suganya@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_helloworld_caller"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+atk-suganya-helloworld = "^0.1.0"
+typer = "^0.7.0"
+
+[tool.poetry.scripts]
+suganya_hw_cli ="atk_helloworld_caller.helloworld_caller:main"
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = true
+secondary = false
+
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

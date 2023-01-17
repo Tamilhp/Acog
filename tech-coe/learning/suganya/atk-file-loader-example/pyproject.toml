@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "atk-training-suganya-file-loader"
+version = "0.1.0"
+description = ""
+authors = ["suganya-acog <suganya@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_training_suganya_file_loader"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.7.0"
+
+[tool.poetry.scripts]
+suganya_atk_file_cli ="atk_training_suganya_file_loader.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

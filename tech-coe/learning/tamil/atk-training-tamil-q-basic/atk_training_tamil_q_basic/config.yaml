@@ -1,0 +1,11 @@
+version: 1.0
+
+config:
+    db_name: persist_q
+    table_name: queue
+    manager_time: 10 #in seconds
+    crash_time: 15 #in seconds
+    ops_console_time: 30 #in seconds
+user:
+    producer_delay: 10 #in seconds
+    consumer_delay: 10 #in seconds
